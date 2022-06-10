@@ -1,69 +1,70 @@
 [
     {
-        "id": 21,
         "name": "Iron Works",
         "type": "Manufacturing Company Website",
         "image": "images/screenshots/ironworks.png",
         "description": "This is a full-stack responsive react project where dealers can buy tools in bulk. Users can go to the dashboard and pay for or cancel their orders. Only admins see all orders and their payment status in the dashboard. They can also ship paid orders. Admins can make normal users admin and add or delete products.",
         "links": [
             {
-                "id": 31,
                 "title": "Live Site",
                 "url": "https://iron-works-ae87a.web.app/"
             },
             {
-                "id": 32,
                 "title": "Client Side Code",
                 "url": "https://github.com/Labib2003/assignment-12-manufacturer-website-with-admin-features-CLIENT"
             },
             {
-                "id": 33,
                 "title": "Server Side Code",
                 "url": "https://github.com/Labib2003/assignment-12-manufacturer-website-with-admin-features-SERVER"
             }
-        ]
+        ],
+        "liveLink": {
+            "title": "Live Site",
+            "url": "https://iron-works-ae87a.web.app/"
+        }
     },
     {
-        "id": 22,
         "name": "Easy Inventory",
         "type": "Inventory Manager Website",
         "image": "images/screenshots/easyInventory.png",
         "description": "This is another full stack responsive web application to manage store inventory. Where users can update the stock of a product by restocking or delivering products. The user can add or delete products from the list. Users can report bugs from the bug report section on the home page.",
         "links": [
             {
-                "id": 41,
                 "title": "Live Site",
                 "url": "https://crick-freak-assignment.web.app/"
             },
             {
-                "id": 42,
                 "title": "Client Side Code",
                 "url": "https://github.com/Labib2003/assignment-11-full-stack-web-app-client"
             },
             {
-                "id": 43,
                 "title": "Server Side Code",
                 "url": "https://github.com/Labib2003/assignment-11-full-stack-web-app-server"
             }
-        ]
+        ],
+        "liveLink": {
+            "title": "Live Site",
+            "url": "https://crick-freak-assignment.web.app/"
+        }
     },
     {
-        "id": 23,
         "name": "Guitar Tutor",
         "type": "Independent Service Provider Website",
         "image": "images/screenshots/guitarTutor.png",
         "description": "This is a simple react website with routing and firebase authentication. Users can log in using email-password or google pop-up. Users cannot access the checkout page without logging in.",
         "links": [
             {
-                "id": 51,
                 "title": "Live Site",
                 "url": "https://guitar-tutor-assignment.web.app/"
             },
             {
-                "id": 52,
                 "title": "Client Side Code",
                 "url": "https://github.com/Labib2003/assignment-10-firebase-authentication"
             }
-        ]
+        ],
+        "liveLink": {
+            "title": "Live Site",
+            "url": "https://guitar-tutor-assignment.web.app/"
+        }
     }
 ]
