@@ -50,7 +50,7 @@ const Portfolio = () => {
                 }}
             >
                 {
-                    projects.map((project, index) => <SwiperSlide key={index}><Project project={project}></Project></SwiperSlide>)
+                    projects.map((project, index) => <SwiperSlide key={index}><Project index={index} project={project}></Project></SwiperSlide>)
                 }
             </Swiper >
         </motion.div>

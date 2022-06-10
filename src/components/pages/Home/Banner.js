@@ -4,7 +4,7 @@ import TypewriterComponent from 'typewriter-effect';
 
 const Banner = () => {
     return (
-        <div className="hero mb-32">
+        <div id="banner" className="hero mb-32">
             <div className="hero-content flex-col w-full justify-around lg:flex-row-reverse">
                 <motion.div
                     initial={{ opacity: 0, x: 50, scale: 0.9 }}
@@ -34,7 +34,7 @@ const Banner = () => {
                             />
                         </span>
                     </div>
-                    <a href="https://drive.google.com/file/d/1HjygocBdppINjJQ9laEe88QnDGac4Jz8/view?usp=sharing" target="_blank" className="btn btn-primary">Download Resume</a>
+                    <a href="#contact" className="btn btn-primary">Lets Have a Chat</a>
                 </motion.div>
             </div>
         </div>
