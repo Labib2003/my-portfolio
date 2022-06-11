@@ -4,7 +4,7 @@ import TypewriterComponent from 'typewriter-effect';
 
 const Banner = () => {
     return (
-        <div id="banner" className="hero mb-32">
+        <div className="hero mb-32">
             <div className="hero-content flex-col w-full justify-around lg:flex-row-reverse">
                 <motion.div
                     initial={{ opacity: 0, x: 50, scale: 0.9 }}
@@ -12,7 +12,10 @@ const Banner = () => {
                     transition={{ duration: 1, ease: "easeInOut" }}
                     className='mask mask-hexagon max-w-sm mb-12 lg:mb-0'
                 >
-                    <img src="images/face.png" alt='me' />
+                    <img
+                        src="images/face.png"
+                        alt='me'
+                    />
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, x: -50, scale: 0.9 }}
@@ -34,7 +37,10 @@ const Banner = () => {
                             />
                         </span>
                     </div>
-                    <a href="#contact" className="btn btn-primary">Lets Have a Chat</a>
+                    <a
+                        href="#contact"
+                        className="btn btn-primary"
+                    >Lets Have a Chat</a>
                 </motion.div>
             </div>
         </div>

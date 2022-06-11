@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
-import Project from './Project';
 import { motion } from 'framer-motion';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import { Navigation, Autoplay } from 'swiper';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
 
+import Project from './Project';
+import ProjectDetailModal from './ProjectDetailModal';
+
 const Portfolio = () => {
     const [projects, setProjects] = useState([]);
+    const [selectedProject, setSelectedProject] = useState({});
+
     useEffect(() => {
         fetch("jsons/projects.json")
             .then(res => res.json())
@@ -50,9 +52,16 @@ const Portfolio = () => {
                 }}
             >
                 {
-                    projects.map((project, index) => <SwiperSlide key={index}><Project index={index} project={project}></Project></SwiperSlide>)
+                    projects.map((project, index) => <SwiperSlide key={index}>
+                        <Project
+                            index={index}
+                            project={project}
+                            setSelectedProject={setSelectedProject}
+                        ></Project>
+                    </SwiperSlide>)
                 }
             </Swiper >
+            <ProjectDetailModal selectedProject={selectedProject}></ProjectDetailModal>
         </motion.div>
     );
 };

@@ -23,9 +23,12 @@ const Services = () => {
                 <p className='text-3xl mb-5'>Services</p>
                 <h3 className='text-5xl font-semibold'>What I do:</h3>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
                 {
-                    services.map(service => <Service key={service.id} service={service}></Service>)
+                    services.map(service => <Service
+                        key={service.id}
+                        service={service}
+                    ></Service>)
                 }
             </div>
         </motion.div>

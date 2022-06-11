@@ -19,21 +19,31 @@ const ProjectDetail = () => {
 
     return (
         <div>
-            <div class="flex flex-col lg:flex-row p-0">
+            <div className="flex flex-col lg:flex-row p-0">
                 <div className='flex flex-col'>
                     {
-                        screenshots.map(screenshot => <>
-                            <img src={`../${screenshot.image}`} class="max-w-sm rounded-lg shadow-2xl" alt='screenshot' />
-                            <p className='mb-5 mt-1'>{`${screenshot.title}`}</p>
+                        screenshots.map((screenshot, index) => <>
+                            <img
+                                key={index}
+                                src={`../${screenshot.image}`}
+                                className="w-full mx-auto rounded-lg"
+                                alt='screenshot'
+                            />
+                            <p className='mb-5 mt-1 text-center'>{`${screenshot.title}`}</p>
                         </>)
                     }
                 </div>
-                <div className='ml-0 lg:ml-20 mt-5'>
-                    <h1 class="text-5xl font-semibold mb-3">{name}</h1>
-                    <p className='badge badge-outline mb-5'>A {type}</p>
-                    <p class="leading-relaxed text-xl mb-5">{detailedDescription}<br></br>{description}</p>
+                <div className='ml-0 lg:ml-20 mt-5 w-full md:w-1/2'>
+                    <h1 className="text-5xl font-semibold mb-3">{name}</h1>
+                    <p className='badge badge-lg badge-outline mb-5 overflow-hidden'>A {type}</p>
+                    <p className="leading-relaxed text-xl mb-5">{detailedDescription}<br></br>{description}</p>
                     {
-                        links.map(link => <a className='btn btn-outline mr-5 mb-5' href={link.url} target="_blank" rel="noreferrer">{link.title}</a>)
+                        links.map((link, index) => <a
+                            key={index}
+                            className='btn btn-outline mr-5 mb-5'
+                            href={link.url} target="_blank"
+                            rel="noreferrer"
+                        >{link.title}</a>)
                     }
                 </div>
             </div>
