@@ -4,7 +4,7 @@ const ProjectDetailModal = ({ selectedProject }) => {
     const { name, type, screenshots, description, detailedDescription, links } = selectedProject;
 
     if (!selectedProject || !screenshots || !links) {
-        return <p>Loading</p>
+        return <p className='hidden'>Loading</p>
     }
 
     return (
@@ -15,18 +15,28 @@ const ProjectDetailModal = ({ selectedProject }) => {
                     <label for="project-details-modal" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <div class="hero">
                         <div class="hero-content flex-col">
-                            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5'>
-                                {
-                                    screenshots.map((screenshot, index) => <div>
-                                        <img
-                                            key={index}
-                                            src={`../${screenshot.image}`}
-                                            className="w-full mx-auto rounded-lg"
-                                            alt='screenshot'
-                                        />
-                                        <p className='mb-5 mt-1 text-center'>{`${screenshot.title}`}</p>
-                                    </div>)
-                                }
+                            <div class="carousel w-full lg:w-2/3 mx-auto mb-5">
+                                <div id="slide1" class="carousel-item relative w-full">
+                                    <img src={screenshots[0]} class="w-full" alt='screenshot' />
+                                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                        <a href="#slide3" class="btn btn-sm btn-circle opacity-70 my-auto">❮</a>
+                                        <a href="#slide2" class="btn btn-sm btn-circle opacity-70 my-auto">❯</a>
+                                    </div>
+                                </div>
+                                <div id="slide2" class="carousel-item relative w-full">
+                                    <img src={screenshots[1]} class="w-full" alt='screenshot' />
+                                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                        <a href="#slide1" class="btn btn-sm btn-circle opacity-70 my-auto">❮</a>
+                                        <a href="#slide3" class="btn btn-sm btn-circle opacity-70 my-auto">❯</a>
+                                    </div>
+                                </div>
+                                <div id="slide3" class="carousel-item relative w-full">
+                                    <img src={screenshots[2]} class="w-full" alt='screenshot' />
+                                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                                        <a href="#slide2" class="btn btn-sm btn-circle opacity-70 my-auto">❮</a>
+                                        <a href="#slide1" class="btn btn-sm btn-circle opacity-70 my-auto">❯</a>
+                                    </div>
+                                </div>
                             </div>
                             <div>
                                 <h1 className="text-5xl font-semibold mb-3">{name}</h1>

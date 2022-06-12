@@ -16,7 +16,7 @@ const Project = ({ project, index, setSelectedProject }) => {
             className="card bg-base-100 shadow-xl h-full"
         >
             <img
-                src={screenshots[0].image}
+                src={screenshots[0]}
                 alt="Shoes"
             />
             <div className="card-body">

@@ -3,18 +3,9 @@
         "name": "Iron Works",
         "type": "Manufacturing Company Website",
         "screenshots": [
-            {
-                "title": "Homepage",
-                "image": "images/screenshots/ironworks.png"
-            },
-            {
-                "title": "Admin Dashboard",
-                "image": "images/screenshots/ironworks-admin-dash.png"
-            },
-            {
-                "title": "User Dashboard",
-                "image": "images/screenshots/ironworks-user-dash.png"
-            }
+            "images/screenshots/ironworks.png",
+            "images/screenshots/ironworks-admin-dash.png",
+            "images/screenshots/ironworks-user-dash.png"
         ],
         "description": "This is a full-stack responsive react project where dealers can buy tools in bulk. Users can go to the dashboard and pay for or cancel their orders. Only admins see all orders and their payment status in the dashboard. They can also ship paid orders. Admins can make normal users admin and add or delete products.",
         "detailedDescription": "This is a website made for an imaginary company called Iron Works who manufacturers hand tools and operates in the south Asia region. Regular users will be able to login and purchase their products in bulk form the site. Each product has its own minimum order quantity and total stock. After placing the order the user can go to the dashboard to delete or pay for the order. Users with admin privilege will be able to add and remove products. They will be able to see all of the orders and their payment status. If the payment is done, the admins can ship the product to the user.",
@@ -37,18 +28,9 @@
         "name": "Easy Inventory",
         "type": "Inventory Manager Website",
         "screenshots": [
-            {
-                "title": "Homepage",
-                "image": "images/screenshots/easyInventory.png"
-            },
-            {
-                "title": "Add New Product Page",
-                "image": "images/screenshots/easyInventory-add-product.png"
-            },
-            {
-                "title": "Manage Products Page",
-                "image": "images/screenshots/easyInventory-manage-inv.png"
-            }
+            "images/screenshots/easyInventory.png",
+            "images/screenshots/easyInventory-add-product.png",
+            "images/screenshots/easyInventory-manage-inv.png"
         ],
         "description": "This is another full stack responsive web application to manage store inventory. Where users can update the stock of a product by restocking or delivering products. The user can add or delete products from the list. Users can report bugs from the bug report section on the home page.",
         "detailedDescription": "This is a inventory management website. Here the user can monitor their stock in the warehouse. They can also individually add more stock of each item or ship items away from the warehouse (decrease the stock). Alternatively, the users can delete an item or add new items in the inventory. The users can also see the items added by them.",
@@ -71,18 +53,9 @@
         "name": "Guitar Tutor",
         "type": "Independent Service Provider Website",
         "screenshots": [
-            {
-                "title": "Homepage",
-                "image": "images/screenshots/guitarTutor.png"
-            },
-            {
-                "title": "Login Page",
-                "image": "images/screenshots/guitarTutor-login.png"
-            },
-            {
-                "title": "Services",
-                "image": "images/screenshots/guitarTutor-services.png"
-            }
+            "images/screenshots/guitarTutor.png",
+            "images/screenshots/guitarTutor-login.png",
+            "images/screenshots/guitarTutor-services.png"
         ],
         "description": "This is a simple react website with routing and firebase authentication. Users can log in using email-password or google pop-up. Users cannot access the checkout page without logging in.",
         "detailedDescription": "This is a website for a independent guitar teacher. The users can see all of his services and other user reviews in the homepage. They can log in to book a service. The login part is a must. If the user clicks on the booking button without logging in first, they wil be redirected to the login page and returned back to the checkout page after logging in successfully.",
