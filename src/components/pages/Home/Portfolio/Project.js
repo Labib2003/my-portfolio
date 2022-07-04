@@ -1,18 +1,10 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
 
-const Project = ({ project, index, setSelectedProject }) => {
+const Project = ({ project, setSelectedProject }) => {
     const { name, type, screenshots, description, links } = project;
-    const navigate = useNavigate();
-
-    const navigateToDetails = (i) => {
-        navigate(`/projects/${i}`);
-    }
 
     return (
-        <motion.div
-            whileTap={{ scale: 1.05 }}
+        <div
             className="card bg-base-100 shadow-xl h-full"
         >
             <img
@@ -25,8 +17,11 @@ const Project = ({ project, index, setSelectedProject }) => {
                     <p className='badge h-auto badge-outline'>{type}</p>
                 </div>
                 <p className='leading-relaxed mb-5'>{description}</p>
-                <label onClick={() => setSelectedProject(project)} for="project-details-modal" class="btn btn-sm btn-outline">Project Details</label>
-                <button className="btn btn-sm btn-outline" onClick={() => navigateToDetails(index)}>Project Details</button>
+                <label
+                    onClick={() => setSelectedProject(project)}
+                    htmlFor="project-details-modal"
+                    className="btn btn-sm btn-outline"
+                >Project Details</label>
                 <a
                     className="btn btn-sm btn-outline"
                     href={links[0].url} target="_blank"
@@ -35,7 +30,7 @@ const Project = ({ project, index, setSelectedProject }) => {
                     <p>Live Site</p>
                 </a>
             </div>
-        </motion.div>
+        </div >
     );
 };
 
