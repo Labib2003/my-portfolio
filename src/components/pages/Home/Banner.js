@@ -28,7 +28,7 @@ const Banner = () => {
                         <span className='font-semibold'>
                             <TypewriterComponent
                                 options={{
-                                    strings: ['HTML5', 'CSS3', 'JavaScript', 'ReactJS'],
+                                    strings: ['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'ReactJS', 'Redux'],
                                     deleteSpeed: 50,
                                     pauseFor: 500,
                                     autoStart: true,

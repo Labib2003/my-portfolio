@@ -69,5 +69,26 @@
                 "url": "https://github.com/Labib2003/assignment-10-firebase-authentication"
             }
         ]
+    },
+    {
+        "name": "Shopping Cart",
+        "type": "E-commerce website",
+        "screenshots": [
+            "images/screenshots/shopping-cart-main.jpg",
+            "images/screenshots/shopping-cart-ordering.jpg",
+            "images/screenshots/shopping-cart-cart.jpg"
+        ],
+        "description": "This is a simple react E-commerce website where the users can add items to the cart and the cart will calculate the total cost of the items. The users can delete any item from the cart as well. I used redux and TypeScript for this project.",
+        "detailedDescription": "This website was my first large scale projects using redux and TypeScript. It uses redux to manage all of the state. The homepage shows a simple grid layout of cards with product details and an add to cart button. The user can click the button and then increase or decrease the quantity of the order. The users can also click on the shopping cart icon to open a side drawer where they can see their full order and the total cost.",
+        "links": [
+            {
+                "title": "Live Site",
+                "url": "https://shopping-cart-with-redux.netlify.app/"
+            },
+            {
+                "title": "Client Side Code",
+                "url": "https://github.com/Labib2003/shopping-cart-with-redux"
+            }
+        ]
     }
 ]
